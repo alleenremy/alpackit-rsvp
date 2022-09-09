@@ -7,3 +7,54 @@ Author URI:
 Template:       twentytwentytwo
 Version:        0.1.0
 */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,600&display=swap');
+
+body {
+    font-family: Nunito !important;
+}
+
+h1, h2, h3 {
+    font-family: Nunito !important;
+}
+
+input[type="submit" i] {
+    background-color: #cf2e2e;
+    color: #ffffff;
+    border-width: 0px;
+    border-radius: 5px;
+}
+
+input[type="submit" i]:hover {
+    background-color: #4b884a;
+}
+
+#rsvpPlugin input {
+    padding: 10px 15px;
+    margin-left:10px;
+}
+
+.rsvpBorderTop {
+    display:none;
+}
+
+.rsvpAdditionalAttendee {
+    border:none !important;
+}
+
+button {
+    background-color: #d89b16;
+    color: #ffffff;
+    border-width: 0px;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+button:hover {
+    background-color: #4b884a;
+}
+
+#rsvpPlugin hr{
+    display: none;
+}
