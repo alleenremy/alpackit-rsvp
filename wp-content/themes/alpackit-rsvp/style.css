@@ -36,7 +36,7 @@ input[type="submit" i]:hover {
 }
 
 .rsvpBorderTop {
-    display:none;
+    border-top:none !important;
 }
 
 .rsvpAdditionalAttendee {
