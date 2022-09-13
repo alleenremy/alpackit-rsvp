@@ -1363,11 +1363,6 @@ function frontend_rsvp_thankyou( $thank_you_primary, $thank_you_associated ) {
 function rsvp_frontend_new_atendee_thankyou( $thank_you_primary, $thank_you_associated, $password = '' ) {
 	$thank_you_text = sprintf( __( 'Hi %1$s, we are glad you can make it! See you after the first day of WCNL (september 15th) in the Jeu de Boules Bar at Coehoornstraat 56 Arnhem. If you can\'t make it, please call us 0031634666365', 'rsvp' ), esc_html( $thank_you_primary ) );
 
-	if ( ! empty( $password ) ) {
-		$thank_you_text .= ' ' . __( 'To modify your RSVP just come back to this page and enter in your first and last name. You will also need to know your passcode which is', 'rsvp' ) .
-						   " - <strong>$password</strong>";
-	}
-
 	if ( count( $thank_you_associated ) > 0 ) {
 		$thank_you_text .= __( '<br /><br />You have also RSVPed for - ', 'rsvp' );
 		foreach ( $thank_you_associated as $name ) {
