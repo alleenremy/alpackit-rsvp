@@ -1361,7 +1361,7 @@ function frontend_rsvp_thankyou( $thank_you_primary, $thank_you_associated ) {
  * @return string                       The HTML that should be displayed to the user.
  */
 function rsvp_frontend_new_atendee_thankyou( $thank_you_primary, $thank_you_associated, $password = '' ) {
-	$thank_you_text = sprintf( __( 'Thank you %1$s for RSVPing. Thank you for joining us, see you september 15th at 18:00 in the Jeu de Boules Bar at Coehoornstraat 56 6811 LA Arnhem If you can\'t make it, please call us 0031634666365 ', 'rsvp' ), esc_html( $thank_you_primary ) );
+	$thank_you_text = sprintf( __( 'Hi %1$s, we are glad you can make it! See you after the first day of WCNL (september 15th) in the Jeu de Boules Bar at Coehoornstraat 56 Arnhem. If you can\'t make it, please call us 0031634666365', 'rsvp' ), esc_html( $thank_you_primary ) );
 
 	if ( ! empty( $password ) ) {
 		$thank_you_text .= ' ' . __( 'To modify your RSVP just come back to this page and enter in your first and last name. You will also need to know your passcode which is', 'rsvp' ) .
@@ -1452,7 +1452,7 @@ function rsvp_frontend_greeting() {
 		<input type="text" name="lastName" id="lastName" size="30" value="" class="required" />' . RSVP_END_PARA;
 	}
 	if ( rsvp_require_passcode() ) {
-		$output .= "Do you want to change your subscription?";
+		$output .= "Do you want to change your RSVP?";
 		$output .= RSVP_START_PARA . '<label for="passcode">' . __( 'Passcode', 'rsvp' ) . '</label>
 		<input type="password" name="passcode" id="passcode" size="30" value="" class="required" autocomplete="off" />' . RSVP_END_PARA;
 	}

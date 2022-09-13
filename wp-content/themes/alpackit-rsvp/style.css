@@ -58,3 +58,8 @@ button:hover {
 #rsvpPlugin hr{
     display: none;
 }
+
+#rsvpNew ~ .rsvpParagraph{ display: none !important; }
+#rsvp{ display: none; }
+
+footer .wp-block-site-title{ display: none !important; }
